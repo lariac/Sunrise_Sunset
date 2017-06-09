@@ -1,6 +1,6 @@
 .location-Panel{
   background-color:black;
-  height: 512px;
+  height: 75vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -25,7 +25,7 @@
 .location-Information{
   height: 50vh;
   width: 60vw;
-  border: 2px solid white;
+  border: 2px solid #424242;
   margin-left: 25vw;
 }
 

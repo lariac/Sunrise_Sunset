@@ -1,0 +1,202 @@
+.sunriseSunsetContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.sunriseContainer{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.sunsetContainer{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.sunriseAnimationContainer{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+    height: 44.5vh;
+    width: 50vw;
+   // background-color:green;
+    animation: colorchangeSunrise 10s;
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    background-color: #81DAF5;
+}
+
+@keyframes colorchangeSunrise
+{
+    0%   {background:#6E6E6E;}
+    25%  {background: #E2A9F3;}
+    50%  {background: #F5A9BC;}
+    75%  {background: #A9E2F3;}
+    100% {background: #81DAF5;}
+}
+
+.sunsetAnimationContainer{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+    height: 44.5vh;
+    width: 50vw;
+    background-color:#151515;
+    animation: colorchangeSunset 12s;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+
+@keyframes colorchangeSunset
+{
+    0%   {background: #81DAF5;}
+    25%  {background: #F5A9BC;}
+    50%  {background: #E2A9F3;}
+    25%  {background: #FAAC58;}
+    100% {background: #151515;}
+}
+
+.sunriseDataContainer{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+     height: 30.5vh;
+    background-color:#424242;
+    border: 2px dashed black;
+    border-style: dashed none dashed dashed;
+}
+
+.sunsetDataContainer{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+    height: 30.5vh;
+    width: 50vw;
+    background-color:#424242;
+    border: 2px dashed black;
+}
+
+.mountainSunrise{
+  //  height: 25vh;
+  //  width: 80vw;
+   // position: absolute;
+   width:40vw;
+   height:30vh;
+    left: 0vw;
+   margin-top: 14.5vh;
+    margin-left: -7vw;
+    z-index: 1;
+};
+.mountainSunset{
+  //  height: 25vh;
+  //  width: 80vw;
+   // position: absolute;
+   width:40vw;
+   height:30vh;
+    left: 0vw;
+    margin-top: 14.5vh;
+    margin-left: -7vw;
+    z-index: 1;
+};
+
+
+.cloudSunrise{
+  position: absolute;
+   width:40vw;
+   height:30vh;
+   top: 22vh;
+   left: 70px;
+   animation: cloudSunriseAnimation 10s;
+  z-index: 1;
+}
+
+@keyframes cloudSunriseAnimation
+{
+  0%   { left: 300px;  }
+  50%  { left: 170px;  }
+  100%  { left: 70px}
+}
+
+.cloudSunset{
+  position: absolute;
+  max-width:40vw;
+  height:30vh;
+  left: 82vw;
+  top: 22vh;
+  z-index: 1;
+}
+
+.sunSunrise{
+   position: absolute;
+   width:35vw;
+   height:25vh;
+  // top: 46vh;
+  // left: -10vw;
+   animation: sunrise 10s linear ;
+   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  left: 300px; top: 130px;
+  z-index: 1;
+
+ // transform: rotate(45deg) translateX(150px);
+}
+
+@keyframes sunrise
+{
+  0%   { left: 50px; top: 200px; }
+  40%  { left: 200px; top: 150px; }
+  80%  { left: 300px; top: 130px; }
+}
+
+.sunSunset{
+  position: absolute;
+   width:35vw;
+   height:25vh;
+  // top: 46vh;
+  // left: -10vw;
+    animation: sunset 10s linear ;
+   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  left: 600px; top: 300px;
+ 
+}
+
+@keyframes sunset
+{
+  0%   { left: 900px; top: 95px; }
+  40%  { left: 800px; top: 150px; }
+  80%  { left: 600px; top: 280px; }
+}
+

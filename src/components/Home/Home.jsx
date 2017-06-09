@@ -1,7 +1,8 @@
-import React from'react';
+import React from 'react';
 import homeStyle from './_home.scss';
 import { Link, Route, Switch } from 'react-router-dom';
 import LocationPanelContainer from '../../containers/LocationPanelContainer'
+import SunriseSunset from '../SunriseSunset/SunriseSunset'
 
 class Home extends React.Component {
   constructor(props) {
@@ -12,11 +13,25 @@ class Home extends React.Component {
       <div className="Home">
         <div className="Home-header">
           <img src={require('../../img/sun.svg')} className="Home-logo" alt="logo" />
-          <span className="Home-font">Sunrise-Sunset</span>
+          <span className="Home-font">World's Sunrise-Sunset Calculator</span>
         </div>
-        <div className="Home-content">
+
+        <Route path="/Sunset_Sunrise_Calculator" render={() => (
+          <div className="Home-content">
+             <SunriseSunset />
+          </div>
+        )}
+        />
+
+        <Route path="/" render={() => (
+          <div className="Home-content">
             <LocationPanelContainer/>
-        </div>
+          </div>
+        )}
+        />
+
+
+
       </div>
     );
   }

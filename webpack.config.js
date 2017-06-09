@@ -44,7 +44,7 @@ module.exports = {
             includePaths: [path.join(__dirname, '/node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss')]
           }
         }]
-      },      
+      },
       {
         test: /\.(jpg|png|svg|ico)$/,
         loader: 'url-loader',
@@ -52,6 +52,10 @@ module.exports = {
           limit: 25000,
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
     ],
   },
   plugins: [
