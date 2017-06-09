@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "classes": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "jsx-quotes": [2,"prefer-single"],
+    "react/jsx-curly-spacing": [2,"always"],
+    "react/prefer-stateless-function": [0],
+    "no-console": [0],
+    "no-unused-vars": [1]
+  },
+  "globals": {
+    "document": true,
+    "console": true
+  }
+}

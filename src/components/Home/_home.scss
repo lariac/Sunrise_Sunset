@@ -1,0 +1,52 @@
+.Home {
+  text-align: center;
+  background-color: black;
+  height:100%;
+  width:100%;
+  z-index: 1;
+}
+
+.Home-logo {
+ // animation: App-logo-spin infinite 20s linear;
+  height: 17vh;
+}
+
+.body{
+  background-color: black;
+}
+
+.color{
+   background-color: black;
+}
+
+.Home-header {
+  background-color: #F9D6A2;
+  height: 150px;
+  padding: 20px;
+  color: #e51c71;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items:center;
+}
+
+.Home-intro {
+  font-size: large;
+  height: 40%;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.Home-font{
+  font-family: 'Pacifico', cursive;
+  font-size: 5vw;
+  margin-left: 1rem;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

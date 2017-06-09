@@ -1,0 +1,24 @@
+#PlacesAutocomplete__root input{
+    max-width: 300px;
+ 
+};
+
+.LocationContainer{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items:center;
+  margin-top:4vh;
+  max-width:60vw;
+  margin-bottom: 10vh;
+}
+
+.LocationContainerItems{
+    margin-right:2vw;
+}
+
+.btn{
+    margin-left: 2vw;
+}

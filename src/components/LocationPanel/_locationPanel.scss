@@ -1,0 +1,102 @@
+.location-Panel{
+  background-color:black;
+  height: 512px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items:center;
+}
+
+.location-Panel-image{
+  animation: earth-spin infinite 15s linear;
+  height: 50vh;
+  width: 30vw;
+  position: absolute;
+  margin-left: -32vw;
+}
+
+@keyframes earth-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.location-Information{
+  height: 50vh;
+  width: 60vw;
+  border: 2px solid white;
+  margin-left: 25vw;
+}
+
+.location-Panel-font{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+
+.location-default-button{  
+    margin-left: 1vw;
+}
+
+.location-Settings-Result{
+  margin-bottom: 23vh;
+}
+
+.LocationContainer{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items:center;
+  margin-top:4vh;
+}
+
+#PlacesAutocomplete__autocomplete-container {
+  background-color:purple;
+}
+
+.pac-selected{
+background-color:purple;
+}
+
+.pac-container{
+  background-color:purple;
+}
+
+#PlacesAutocomplete__autocomplete-container .pac-item:hover{
+background-color:purple;
+}
+
+.checkButton{
+  width: 5vw;
+  height: 5vh;
+}
+
+.removeButtonStyle{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left:6vw;
+}
+
+#PlacesAutocomplete__root input{
+  margin-left: 6.2vw;
+}
+
+.pac-container { 
+   margin-left: 6.2vw !important; 
+  min-width: 100%; }
+
+  .pac-container {
+	color: #d9d9d9; 
+}
+ 
+/*
+class for each line of the result
+*/
+.pac-item {
+	font-size: 12px;
+	color: #d9d9d9;
+}
